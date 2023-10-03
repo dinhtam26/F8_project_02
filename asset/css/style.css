@@ -46,6 +46,23 @@ a {
     opacity: 0.9;
 }
 
+.heading {
+    color: #171100;
+    font-family: var(--font-family-title); 
+    font-weight: 700;
+    letter-spacing: -0.02rem;
+}
+
+.heading.lv1 {
+    font-size: 5.5rem;
+    line-height: 1.17;
+}
+
+.heading.lv2 {
+    font-size: 3.8rem;
+    line-height: 1.26;
+}
+
 /* ============= Header ============= */
 .header {
     background-color: #FFFCF4;
@@ -187,14 +204,7 @@ a {
     padding: 64px 0 0 130px;
 }
 
-.content-block .heading {
-    color: #171100;
-    font-family: var(--font-family-title);
-    font-size: 5.5rem;
-    font-weight: 700;
-    line-height: 1.17; 
-    letter-spacing: -0.02rem;
-}
+
 
 .content-block .sub-title {
     margin: 22px 0;;
@@ -282,3 +292,47 @@ a {
      
 }
 
+/* ========== Popular ===========*/
+.popular {
+    padding: 65px 0;
+    margin-top: 135px;
+}
+
+.popular .popular-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popular-top .info .desc {
+    margin-top: 16px;
+    width: 458px;
+    color: #5F5B53;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.67; 
+}
+
+.popular-top .control-btn {
+    margin-left: 18px;
+    display:inline-flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid var(--primary-color);
+    background: transparent;
+    cursor: pointer;
+}
+
+.popular-top .control-btn i {
+    margin: auto;
+    color: var(--primary-color)
+}
+
+.popular-top .control-btn:hover {
+    background: var(--primary-color);
+}
+
+.popular-top .control-btn:hover i {
+    color: #fff;
+}
