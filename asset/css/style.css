@@ -434,3 +434,69 @@ a {
     box-shadow: 0px 18px 36px 0px rgba(0, 0, 0, 0.05);
 }
 
+/* ============= Feedback ============= */
+
+.feedback {
+    margin-top: 135px;
+    padding: 96px 0;
+    background: #2E2100;
+}
+
+.feedback-item {
+    display:flex;
+    justify-content: space-between;
+}
+
+.feedback-item .info .avatar {
+    width: 72px;
+    height: 72px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.feedback-item .info .name {
+    margin-top: 18px;
+    color: #F7F7F7;
+    font-family: var(--font-family-title);
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1.42; 
+}
+
+.feedback-item .info .desc {
+    margin-top: 4px;
+    color: #BFBCB2;
+    font-size: 1.4rem;
+    line-height: 1.857; 
+}
+
+.feedback-item .info .dots {
+    display: flex;
+    gap: 6px;
+}
+
+.feedback-item .info .dot {
+    margin-top: 28px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #634700;
+    cursor: pointer;
+}
+
+.feedback-item .info .dot.active {
+    background: #ffb900;
+    cursor: default;
+}
+
+.feedback-item .block-content {
+    width: 66%;
+}
+
+.feedback-item blockquote {
+    padding-left: 30px;
+    color: #FFF;
+    font-size: 2.6rem;
+    font-style: italic;
+    line-height: 1.54;
+}
