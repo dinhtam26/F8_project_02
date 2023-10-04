@@ -442,7 +442,14 @@ a {
     background: #2E2100;
 }
 
+.feedback-list {
+    display: flex;
+    overflow: hidden;
+}
+
 .feedback-item {
+    flex-shrink: 0;
+    width: 100%;
     display:flex;
     justify-content: space-between;
 }
@@ -499,4 +506,82 @@ a {
     font-size: 2.6rem;
     font-style: italic;
     line-height: 1.54;
+}
+
+/* ============= Feature ============= */
+.feature {
+    margin-top: 135px;
+    padding: 65px 0;
+
+}
+
+.main-feature {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feature .feature-image {
+    display:flex;
+    gap: 30px;
+    width: 49%;
+}
+
+.feature .feature-image .image {
+    margin-top: 34px;
+    
+}
+
+.feature .feature-image img {
+    width: 270px;
+    height: 404px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.feature .feature-info {
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 43%;
+} 
+
+.feature .feature-info .date,
+.feature .feature-info .desc {
+    margin-top: 16px;
+    color: #5F5B53;
+    font-size: 1.6rem;
+    line-height: 1.75; 
+}
+
+.feature .feature-info .feature-btn {
+    margin-top: 32px;
+    min-width: 137px;
+    color: #fff;
+    border: none;
+    background: var(--primary-color);
+}
+
+.feature-2 {
+    margin-top: 70px;
+}
+
+.feature-2 .main-feature {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.feature-2 img {
+    width: 43%;
+    height: 440px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.feature-2 .feature-info {
+    width: 50%;
+}
+
+.feature-2 .heading.lv2 {
+    font-size: 3.6rem;
 }
